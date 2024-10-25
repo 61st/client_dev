@@ -1,0 +1,1 @@
+#include "\z\lximc\addons\acre\script_component.hpp"

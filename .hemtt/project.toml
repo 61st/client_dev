@@ -1,0 +1,26 @@
+name = "lximc"
+mainprefix = "z"
+prefix = "lximc"
+author = "YonV"
+
+[files]
+include = [
+    "mod.cpp",
+    "README.md",
+    "README*.md",
+    "LICENSE",
+    "3rdparty",
+    "AUTHORS.txt",
+    "logo_512.paa"
+]
+
+exclude = ["*.psd", "*.tga"]
+
+[version]
+path = "addons/main/script_version.hpp"
+
+[asc]
+exclude = [
+    ".inc.sqf",
+    "cba_settings.sqf",
+]

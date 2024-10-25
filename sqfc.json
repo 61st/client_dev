@@ -1,0 +1,21 @@
+{
+    "inputDirs": [
+        "P:/z/lximc/addons/"
+    ],
+    "includePaths": [
+        "P:/"
+    ],
+    "excludeList": [
+        "initSettings.inc.sqf",
+        "initKeybinds.inc.sqf",
+        "initSettings.inc.sqf",
+        "xeh_prep.sqf",
+        "XEH_PREP.sqf",
+        "XEH_PREP.hpp",
+        "\\initSettings.inc.sqf",
+        "\\initKeybinds.inc.sqf",
+        "\\xeh_prep.sqf"
+    ],
+    "outputDir": "P:/",
+    "workerThreads": 12
+}

@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  release-addon:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout the source code
+          uses: actions/checkout@v2
+        - name: Setup HEMTT
+          uses: arma-actions/hemtt@v1
+        - name: Run HEMTT build
+          run: hemtt release --no-archive
+        - name: Move release to releases folder
+          run:
+            version="${{ github.event.release.tag_name }}"
+            mv .hemttout/release "@lximc-${{ env.VERSION }}"
+        - name: Zip release
+          run: zip -r "@lximc.zip" ./@lximc-${{ env.VERSION }}
+        - name: Update Release with Files
+          uses: softprops/action-gh-release@v1
+          with:
+            files: ./@lximc.zip
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
