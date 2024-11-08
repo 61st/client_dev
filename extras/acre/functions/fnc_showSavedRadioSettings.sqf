@@ -44,7 +44,7 @@ private _hintString = [["SAVED RADIO SETTINGS", 1.2]];
 		case "CENTER": {"Both Ears"};
 	};
 	_volumeText = format ["%1", str round((_volumes select _index) * 100)];
-	private _tempString = format ["Radio %1%2: %3 - Channel %4 Volume: %5%% - %6", _index + 1, _pttText, _baseRadio, _channels select _index, _volumeText, _spatialText];
+	private _tempString = format ["Radio %1%2: %3 - Channel %4 Volume: %5 - %6", _index + 1, _pttText, _baseRadio, _channels select _index, _volumeText, _spatialText];
 	_hintString pushBack [_tempString]
 } forEach _baseRadios;
 _hintString call CBA_fnc_notify;

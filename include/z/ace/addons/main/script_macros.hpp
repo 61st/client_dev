@@ -149,4 +149,3 @@
 
 #define SUBSKILLS ["aimingAccuracy", "aimingShake", "aimingSpeed", "spotDistance", "spotTime", "courage", "reloadSpeed", "commanding", "general"]
 
-#include "script_debug.hpp"
