@@ -6,7 +6,7 @@
  * Last Update: 2023-09-23
  * License: License: GNU General Public License v3.0 only - https://www.gnu.org/licenses/gpl-3.0-standalone.html
  *
- * Adds respawn event handler to restore radios on respawn.
+ * Adds Respawn event handler to restore radios on Respawn.
  *
  * Arguments:
  * None

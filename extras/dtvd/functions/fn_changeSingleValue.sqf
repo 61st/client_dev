@@ -52,7 +52,7 @@ if (_viewType isEqualTo "car") exitWith {
     };
 };
 
-if (_viewType isEqualto "foot") exitWith {
+if (_viewType isEqualTo "foot") exitWith {
     if (isNull _vehicle) then {
         if (_index isEqualTo 0) then {
             setViewDistance _value;

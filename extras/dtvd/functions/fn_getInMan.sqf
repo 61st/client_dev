@@ -1,5 +1,5 @@
 /*
-    File: fn_getInMan.sqf
+    File: fn_GetInMan.sqf
     Author: Dom
     Description: Updates to correct view distance for vehicle type
 */

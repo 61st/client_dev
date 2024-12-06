@@ -1,9 +1,9 @@
 class CfgPatches {
-    class dtvd {
+    class DTVD {
         units[] = {};
         weapons[] = {};
         requiredVersion = 2.00;
-        requiredAddons[] = {"ace_common"};
+        requiredAddons[] = {"cba_main"};
         author = "DomT602";
     };
 };
@@ -12,20 +12,28 @@ class CfgFunctions {
     class DT {
         tag = "DT";
         class viewDistance {
-            file = "z\lximc\addons\dtvd\functions";
+            file = "\DTVD\functions";
             class changeSingleValue {};
             class changeViewByHotkey {};
+            class focusedZoom {};
+            class getActiveUAV {};
             class GetInMan {};
             class getOutMan {};
+            class getVarByVehicle {};
+            class incrementDistance {};
+            class initFocusedBoost {};
             class initViewDistance {};
+            class initZoomBoost {};
             class openViewDistanceMenu {};
+            class OpticsSwitch {};
             class terrainGridChanged {};
             class viewEditChanged {};
             class viewSliderChanged {};
+            class zoomEditChanged {};
+            class zoomSliderChanged {};
         };
     };
 };
 
 #include "CfgEventHandlers.hpp"
 #include "DT_viewDistanceMenu.hpp"
-#include "CfgVehicles.hpp"

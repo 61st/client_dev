@@ -1,0 +1,8 @@
+[sqf.command_case]
+severity = "Warning"
+options.ignore = []
+
+[sqf.banned_commands]
+options.banned = [
+    "execVM",
+]

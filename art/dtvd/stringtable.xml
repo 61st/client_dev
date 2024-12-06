@@ -1,175 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="LXIMC">
-    <Package name="DTVD">
-        <Key ID="STR_LXIMC_DTVD_air">
+<Project name="DT View Distance">
+    <Package name="GUI">
+        <Key ID="STR_DTVD_air">
             <English>Other Air:</English>
             <German>Andere Flugzeuge:</German>
             <Japanese>航空機:</Japanese>
             <Turkish>Diğer Hava Araçları:</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_car">
+        <Key ID="STR_DTVD_car">
             <English>Car:</English>
             <German>Auto:</German>
             <Japanese>車両:</Japanese>
             <Turkish>Araç:</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_foot">
+        <Key ID="STR_DTVD_foot">
             <English>Foot:</English>
             <German>Fuß:</German>
             <Japanese>歩兵:</Japanese>
             <Turkish>Piyade:</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_menuTitle">
+        <Key ID="STR_DTVD_menuTitle">
             <English>View Distance Menu</English>
             <German>Sichtweiten Einstellungen</German>
             <Japanese>描画視程設定</Japanese>
             <Turkish>Görüş Mesafesi Menüsü</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_object">
+        <Key ID="STR_DTVD_object">
             <English>Object:</English>
             <German>Objektsichtweite:</German>
             <Japanese>オブジェクト:</Japanese>
             <Turkish>Obje Görüş Mesafesi:</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_rotary">
+        <Key ID="STR_DTVD_rotary">
             <English>Rotary:</English>
             <German>Helikopter:</German>
             <Japanese>回転翼:</Japanese>
             <Turkish>Helikopter:</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_ship">
+        <Key ID="STR_DTVD_ship">
             <English>Ship:</English>
             <German>Schiff:</German>
             <Japanese>船舶:</Japanese>
             <Turkish>Gemi:</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_terrain">
+        <Key ID="STR_DTVD_terrain">
             <English>Terrain:</English>
             <German>Gelände:</German>
             <Japanese>地形品質:</Japanese>
             <Turkish>Arazi:</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_view">
+        <Key ID="STR_DTVD_view">
             <English>View:</English>
             <German>Sichtweite:</German>
             <Japanese>総合視程:</Japanese>
             <Turkish>Görüş Mesafesi:</Turkish>
         </Key>
+        <Key ID="STR_DTVD_zoom">
+            <English>Zoom:</English>
+        </Key>
+        <Key ID="STR_DTVD_zoomTooltip">
+            <English>This setting is enabled through Options &gt; Addon Options &gt; 61st View Distance</English>
+        </Key>
     </Package>
     <Package name="Options">
+        <Key ID="STR_DTVD_enableOption">
+            <English>Enable View Distance Management</English>
+            <German>Aktiviere Sichtweiten Manager</German>
+            <Japanese>描画視程設定を有効化</Japanese>
+            <Turkish>Görüş Mesafesi Düzenleyicisini Etkinleştir</Turkish>
+        </Key>
+        <Key ID="STR_DTVD_enableOptionDescription">
+            <English>Allow the DT View Distance Manager to manage your view distance and terrain grid.</English>
+            <German>Erlaube den DT Sichtweiten Manager die Sichtweite und Geländeraster einzustellen.</German>
+            <Japanese>DTVDで描画視程と地形品質を管理できるようにします。</Japanese>
+            <Turkish>DT Görüş Mesafesi Düzenleyicisine görüş mesafesini ve araziyi ayarlaması için izin ver.</Turkish>
+        </Key>
+        <Key ID="STR_DTVD_focusedBoost">
+            <English>Enable Focused Zoom Boost</English>
+        </Key>
+        <Key ID="STR_DTVD_focusedBoostDescription">
+            <English>Enables the setting so when you focus your view (hold right click etc), your current view and object view distance is boosted by the configured value.</English>
+        </Key>
+        <Key ID="STR_DTVD_hotkey1">
+            <English>View distance hotkey 1</English>
+            <Japanese>視程距離ホットキー 1</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_hotkey2">
+            <English>View distance hotkey 2</English>
+            <Japanese>視程距離ホットキー 2</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_hotkey3">
+            <English>View distance hotkey 3</English>
+            <Japanese>視程距離ホットキー 3</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_incrementDistance">
+            <English>Distance Increment Value</English>
+        </Key>
+        <Key ID="STR_DTVD_incrementDistanceDescription">
+            <English>Select the distance you want added or subtracted when the selected hotkey is pressed.</English>
+        </Key>
+        <Key ID="STR_DTVD_incrementHotkeyAdd">
+            <English>Increment distance hotkey</English>
+        </Key>
+        <Key ID="STR_DTVD_incrementHotkeyRemove">
+            <English>Decrement distance hotkey</English>
+        </Key>
+        <Key ID="STR_DTVD_maxDistance">
+            <English>Max View Distance</English>
+            <German>Maximale Sichtweite</German>
+            <Japanese>最大描画視程距離</Japanese>
+            <Turkish>Azami Görüş Mesafesi</Turkish>
+        </Key>
+        <Key ID="STR_DTVD_maxDistanceDescription">
+            <English>Select the max view distance players may use.</English>
+            <German>Einstellung der maximalen Sichtweite des Spieler.</German>
+            <Japanese>プレイヤーが使用できる最大描画視程距離を指定します。</Japanese>
+            <Turkish>Oyuncuların kullanabileceği azami görüş mesafesini seç.</Turkish>
+        </Key>
+        <Key ID="STR_DTVD_maxTerrainGrid">
+            <English>Max Terrain Grid</English>
+            <Japanese>最大地形グリッド</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_maxTerrainGridDescription">
+            <English>Select the max terrain grid players may use.</English>
+            <Japanese>プレイヤーが使用できる地形グリッドの最高値(高い=処理優先)を指定します。</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_modSubCategory">
+            <English>View Distance</English>
+            <German>Sichtweite</German>
+            <Japanese>視程距離</Japanese>
+            <Turkish>Görüş Mesafesi</Turkish>
+        </Key>
+        <Key ID="STR_DTVD_objectSync">
+            <English>Automatically sync object distance</English>
+            <Japanese>描画距離自動同期</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_objectSyncDescription">
+            <English>Automatically sync changes to the object view distance slider to match the selected terrain view distance slider.</English>
+            <Japanese>設定した総合視程と一致するように、オブジェクトの描画視程の変更を自動的に同期します。</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_openMenu">
+            <English>Open view distance menu</English>
+            <German>Öffne Sichtweitenmenü</German>
+            <Japanese>描画視程設定を開く</Japanese>
+            <Turkish>Görüş mesafesi menüsünü aç</Turkish>
+        </Key>
+        <Key ID="STR_DTVD_scopeBoost">
+            <English>Enable Scope Zoom Boost</English>
+        </Key>
+        <Key ID="STR_DTVD_scopeBoostDescription">
+            <English>Enables the setting so when you zoom in through a scope, your current view and object view distance is boosted by the configured value.</English>
+        </Key>
+        <Key ID="STR_DTVD_viewDistanceHotkey1">
+            <English>Change view hotkey 1</English>
+            <Japanese>ホットキー1の設定距離</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_viewDistanceHotkey2">
+            <English>Change view hotkey 2</English>
+            <Japanese>ホットキー2の設定距離</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_viewDistanceHotkey3">
+            <English>Change view hotkey 3</English>
+            <Japanese>ホットキー3の設定距離</Japanese>
+        </Key>
+        <Key ID="STR_DTVD_viewDistanceHotkeyDescription">
+            <English>Select the view and object distance you would like to be changed to when pressing the selected hotkey.</English>
+            <Japanese>選択したホットキーを押したときに変更される総合描画とオブジェクト描画の視程距離を設定します。</Japanese>
+        </Key>
         <Key ID="STR_DT_modCategory">
             <English>61st - View Distance Settings</English>
             <German>61st - View Distance Settings</German>
             <Japanese>61st - View Distance Settings</Japanese>
             <Turkish>61st - View Distance Settings</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_enableOption">
-            <English>Enable View Distance Management</English>
-            <German>Aktiviere Sichtweiten Manager</German>
-            <Japanese>描画視程設定を有効化</Japanese>
-            <Turkish>Görüş Mesafesi Düzenleyicisini Etkinleştir</Turkish>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_enableOptionDescription">
-            <English>Allow the DT View Distance Manager to manage your view distance and terrain grid.</English>
-            <German>Erlaube den DT Sichtweiten Manager die Sichtweite und Geländeraster einzustellen.</German>
-            <Japanese>LXIMCで描画視程と地形品質を管理できるようにします。</Japanese>
-            <Turkish>DT Görüş Mesafesi Düzenleyicisine görüş mesafesini ve araziyi ayarlaması için izin ver.</Turkish>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_hotkey1">
-            <English>View distance hotkey 1</English>
-            <Japanese>視程距離ホットキー 1</Japanese>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_hotkey2">
-            <English>View distance hotkey 2</English>
-            <Japanese>視程距離ホットキー 2</Japanese>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_hotkey3">
-            <English>View distance hotkey 3</English>
-            <Japanese>視程距離ホットキー 3</Japanese>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_maxDistance">
-            <English>Max View Distance</English>
-            <German>Maximale Sichtweite</German>
-            <Japanese>最大描画視程距離</Japanese>
-            <Turkish>Azami Görüş Mesafesi</Turkish>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_maxDistanceDescription">
-            <English>Select the max view distance players may use.</English>
-            <German>Einstellung der maximalen Sichtweite des Spieler.</German>
-            <Japanese>プレイヤーが使用できる最大描画視程距離を指定します。</Japanese>
-            <Turkish>Oyuncuların kullanabileceği azami görüş mesafesini seç.</Turkish>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_maxTerrainGrid">
-            <English>Max Terrain Grid</English>
-            <Japanese>最大地形グリッド</Japanese>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_maxTerrainGridDescription">
-            <English>Select the max terrain grid players may use.</English>
-            <Japanese>プレイヤーが使用できる地形グリッドの最高値(高い=処理優先)を指定します。</Japanese>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_modSubCategory">
-            <English>View Distance</English>
-            <German>Sichtweite</German>
-            <Japanese>視程距離</Japanese>
-            <Turkish>Görüş Mesafesi</Turkish>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_objectSync">
-            <English>Automatically sync object distance</English>
-            <Japanese>描画距離自動同期</Japanese>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_objectSyncDescription">
-            <English>Automatically sync changes to the object view distance to match the selected terrain view distance.</English>
-            <Japanese>設定した総合視程と一致するように、オブジェクトの描画視程の変更を自動的に同期します。</Japanese>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_openMenu">
-            <English>Open view distance menu</English>
-            <German>Öffne Sichtweitenmenü</German>
-            <Japanese>描画視程設定を開く</Japanese>
-            <Turkish>Görüş mesafesi menüsünü aç</Turkish>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_viewDistanceHotkey1">
-            <English>Change view hotkey 1</English>
-            <Japanese>ホットキー1の設定距離</Japanese>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_viewDistanceHotkey2">
-            <English>Change view hotkey 2</English>
-            <Japanese>ホットキー2の設定距離</Japanese>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_viewDistanceHotkey3">
-            <English>Change view hotkey 3</English>
-            <Japanese>ホットキー3の設定距離</Japanese>
-        </Key>
-        <Key ID="STR_LXIMC_DTVD_viewDistanceHotkeyDescription">
-            <English>Select the view and object distance you would like to be changed to when pressing the selected hotkey.</English>
-            <Japanese>選択したホットキーを押したときに変更される総合描画とオブジェクト描画の視程距離を設定します。</Japanese>
-        </Key>
     </Package>
     <Package name="Terrain">
-        <Key ID="STR_LXIMC_DTVD_terrainGrid12.5">
+        <Key ID="STR_DTVD_terrainGrid12.5">
             <English>12.5</English>
             <German>12.5</German>
             <Japanese>12.5</Japanese>
             <Turkish>12.5</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_terrainGrid25">
+        <Key ID="STR_DTVD_terrainGrid25">
             <English>25 (Default)</English>
             <German>25 (Standard)</German>
             <Japanese>25 (デフォルト)</Japanese>
             <Turkish>25 (Varsayılan)</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_terrainGrid3.125">
+        <Key ID="STR_DTVD_terrainGrid3.125">
             <English>3.125 (Best Quality)</English>
             <German>3.125 (Beste Qualität)</German>
             <Japanese>3.125 (最高クオリティ)</Japanese>
             <Turkish>3.125 (En İyi Kalite)</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_terrainGrid50">
+        <Key ID="STR_DTVD_terrainGrid50">
             <English>50 (Smoothest)</English>
             <German>50 (Am weichesten)</German>
             <Japanese>50 (処理優先)</Japanese>
             <Turkish>50 (En düz)</Turkish>
         </Key>
-        <Key ID="STR_LXIMC_DTVD_terrainGrid6.25">
+        <Key ID="STR_DTVD_terrainGrid6.25">
             <English>6.25</English>
             <German>6.25</German>
             <Japanese>6.25</Japanese>

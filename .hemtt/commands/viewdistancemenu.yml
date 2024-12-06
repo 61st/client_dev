@@ -1,0 +1,13 @@
+name: DT_viewDistanceMenu
+description: Fucking DT_viewDistanceMenu
+syntax:
+- call: !Unary player
+  ret:
+    - Boolean
+    - The success of the bananization
+  params:
+  - name: unit
+    description: The unit to bananize
+    type: Object
+argument_loc: Global
+effect_loc: Global

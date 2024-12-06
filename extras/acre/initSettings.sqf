@@ -27,23 +27,23 @@ private _category = COMPONENT_NAME;
     "SLIDER",
     [
         "Number of radios to restore",
-        "How many radio configurations to restore, applies to respawn and persistence. PTT assigned radios are first in the list."
+        "How many radio configurations to restore, applies to Respawn and persistence. PTT assigned radios are first in the list."
     ],
     _category,
     [1, 10, 6, 0, false]
 ] call CBA_fnc_addSetting;
-//Restore radios on respawn?
+//Restore radios on Respawn?
 [
     QGVAR(restoreRadiosOnRespawn),
     "CHECKBOX",
     [
         "Restore radio configuration",
-        "Restore radios on respawn. Works best if units spawn with the same gear they died with."
+        "Restore radios on Respawn. Works best if units spawn with the same gear they died with."
     ],
-    [_category, "On respawn"],
+    [_category, "On Respawn"],
     true
 ] call CBA_fnc_addSetting;
-//Which Radios to restore on respawn
+//Which Radios to restore on Respawn
 [
     QGVAR(radioTypesToRestore),
     "EDITBOX",
@@ -51,7 +51,7 @@ private _category = COMPONENT_NAME;
         "Radio types to restore",
         "In format: 'name1','name2', ...."
     ],
-    [_category, "On respawn"],
+    [_category, "On Respawn"],
     ["'ACRE_PRC77', 'ACRE_PRC117F', 'ACRE_PRC148', 'ACRE_PRC152', 'ACRE_PRC343', 'ACRE_SEM52SL', 'ACRE_SEM70', 'ACRE_BF888S'"]
 
 ] call CBA_fnc_addSetting;
@@ -63,7 +63,7 @@ private _category = COMPONENT_NAME;
         "Timeout for restoring radios",
         "Skip restoring radios if unit has no radios equipped after x seconds. Useful if you add radios to units after they spawn. Set to -1 to never timeout."
     ],
-    [_category, "On respawn"],
+    [_category, "On Respawn"],
     [-1, 15, 5, 0, false]
 ] call CBA_fnc_addSetting;
 //Default speech volume normal bod

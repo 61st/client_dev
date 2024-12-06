@@ -1,4 +1,4 @@
-name = "61st Mechanized Infantry Battalion Client Mod";
+name = "61st Mechanized Infantry Battalion Client Dev Mod";
 picture = "logo_512.paa";
 description = "61st Mechanized Infantry Battalion Client Mod";
 logo = "logo_512.paa";
